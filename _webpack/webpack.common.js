@@ -17,6 +17,8 @@ module.exports = {
     ],
 
     site: [
+      path.resolve(__dirname, "../dev/js/site.js"),
+      path.resolve(__dirname, "../dev/scss/site.scss"),
       path.resolve(__dirname, "../dev/views/site/home.phtml"),
       path.resolve(__dirname, "../dev/views/site/test.phtml"),
     ],
