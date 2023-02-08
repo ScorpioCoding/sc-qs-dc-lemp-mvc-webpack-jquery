@@ -3,11 +3,15 @@
   "env": {
     "browser": true,
     "node": true,
-    "es6": true
+    "es6": true,
+    "jquery": true
   },
   "parserOptions": {
     "ecmaVersion": 6,
     "sourceType": "module"
+  },
+  "globals": {
+    "$": true
   },
   "rules": {
     "no-console": "off",

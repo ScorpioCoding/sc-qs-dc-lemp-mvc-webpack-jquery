@@ -38,6 +38,10 @@ module.exports = {
   },
   plugins: [
     new webpack.ProgressPlugin(),
+    new webpack.ProvidePlugin({
+      $: require.resolve("jquery"),
+      jQuery: require.resolve("jquery"),
+    }),
     plugins.CleanWebpackPlugin,
     plugins.ESLintPlugin,
     //plugins.StyleLintPlugin,
